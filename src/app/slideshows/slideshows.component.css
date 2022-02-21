@@ -1,0 +1,69 @@
+.main{
+  width:100%;
+  height:520px;
+  border:1px solid red;
+  position:relative;
+}
+
+img{
+  width:60%;
+  height:480px;
+  padding:0 auto;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.action{
+  width:100%;
+  height:100%;
+  border:1px solid yellow;
+  position:absolute;
+  z-index: 10;
+}
+
+.info{
+  position:absolute;
+  z-index:5;
+  display:flex;
+  justify-content: space-between;
+  width: 100%;
+  height:100%;
+  padding:20px;
+
+}
+
+.dots,.counter{
+  width:130px;
+  height:30px;
+  padding: 5px;
+  background:rgba(0,0,0,0.8);
+  text-align: center;
+  color:white;
+}
+
+.bullets{
+  width:15px;
+  height:15px;
+  border-radius:50%;
+}
+
+.caption{
+  position: absolute;
+  z-index:9;
+  width:100%;
+  height:100%;
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caption-popup{
+  width:70%;
+  height:100%;
+  background:rgba(100,200,50,0.5);
+  position:relative;
+  text-align: center;
+}
