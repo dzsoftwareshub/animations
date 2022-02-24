@@ -17,3 +17,21 @@ export const zoomIn = animation([
       transform:"scale(1)"
     }))
 ]);
+
+export const fadeOut = animation([
+  style({
+    opacity: "1"
+  }),
+  animate("1s",style({
+    opacity:"0"
+  }))
+]);
+
+export const fadeIn = animation([
+  style({
+    opacity: "0"
+  }),
+  animate("1s",style({
+    opacity:"1"
+  }))
+]);

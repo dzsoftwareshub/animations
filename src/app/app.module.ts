@@ -13,6 +13,9 @@ import { SlideComponent } from './slide/slide.component';
 import { KeyframesComponent } from './keyframes/keyframes.component';
 import { SlideshowsComponent } from './slideshows/slideshows.component';
 import { AboutComponent } from './about/about.component';
+import { RemoveComponent } from './remove/remove.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { QueryComponent } from './query/query.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +27,16 @@ import { AboutComponent } from './about/about.component';
     SlideComponent,
     KeyframesComponent,
     SlideshowsComponent,
-    AboutComponent
+    AboutComponent,
+    RemoveComponent,
+    QueryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

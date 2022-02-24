@@ -1,0 +1,40 @@
+<div class="container py-4">
+  <h3 class="text-center">Student`s List</h3>
+  <table class="table table-bordered text-center bg-white mb-5">
+    <tr>
+      <th>Name</th>
+      <th>Roll</th>
+      <th>Class</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let data of table;index as i" @fadeToggle>
+      <td>{{ data.name }}</td>
+      <td>{{ data.roll }}</td>
+      <td>{{ data.class }}</td>
+      <td>
+        <div class="btn-group">
+          <button class="btn btn-primary" >Edit</button>
+          <button class="btn btn-danger" (click)="delete(i)">Delete</button>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <form [formGroup]="myform" (submit)="add()">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" class="form-control w-50" formControlName="name"/>
+    </div>
+    <div class="form-group">
+      <label>Roll</label>
+      <input type="number" class="form-control w-50" formControlName="roll"/>
+    </div>
+    <div class="form-group">
+      <label>Class</label>
+      <input type="number" class="form-control w-50" formControlName="class"/>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-warning" type="submit">Add</button>
+    </div>
+  </form>
+</div>

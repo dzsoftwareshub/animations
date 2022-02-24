@@ -8,6 +8,8 @@ import { SlideComponent } from './slide/slide.component';
 import { KeyframesComponent } from './keyframes/keyframes.component';
 import { SlideshowsComponent } from './slideshows/slideshows.component';
 import { AboutComponent } from './about/about.component';
+import { RemoveComponent } from './remove/remove.component';
+import { QueryComponent } from './query/query.component';
 
 const routes: Routes = [
   {
@@ -29,6 +31,14 @@ const routes: Routes = [
   {
     path: "slideshows",
     component: SlideshowsComponent
+  },
+  {
+    path: "remove",
+    component: RemoveComponent
+  },
+  {
+    path: "query",
+    component: QueryComponent
   },
   {
     path: "about",

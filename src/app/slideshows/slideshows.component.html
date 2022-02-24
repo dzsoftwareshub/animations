@@ -25,7 +25,7 @@
           <h1 class="text-white display-1 text-center">{{ data.title}}</h1>
           <p>{{ data.description }}</p>
           <div *ngFor="let buttons of data.buttons">
-            <a [href]="button." class="btn">{{ buttons.btntitle }}</a>
+            <a [href]="buttons.btnhref" class="btn" >{{ buttons.btntitle }}</a>
           </div>
         </div>
       </div>
